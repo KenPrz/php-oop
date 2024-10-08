@@ -1,5 +1,4 @@
 <?php
-include './includes/newclass.inc.php';
 include './includes/Fibonacci.php';
 
 // Check if the form has been submitted
@@ -24,6 +23,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['fib-val'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <form action="" method="POST">
