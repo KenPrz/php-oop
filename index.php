@@ -26,17 +26,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['fib-val'])) {
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <form action="" method="POST">
-        <input type="number" name="fib-val" id="fib-val" required>
-        <button type="submit">Calculate!</button>
-    </form>
+    <div class="fib-form">
+        <form action="" method="POST" >
+            <input type="number" name="fib-val" id="fib-val" required>
+            <button type="submit">Calculate!</button>
+        </form>
 
-    <?php if(isset($result)):?>
-        <ul>
-            <?php foreach($result as $index => $value):?>
-                <li><?="{$index}-{$value}";?></li>
-            <? endforeach ?>
-        </ul>
-    <?php endif;?>
+        <?php if(isset($result)):?>
+            <ul>
+                <?php foreach($result as $index => $value):?>
+                    <li><?="{$index}-{$value}";?></li>
+                <? endforeach ?>
+            </ul>
+        <?php endif;?>
+    </div>
 </body>
 </html>
